@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Proyecto contador de personas</title>
+</head>
+
+<body>
+    <!--DIV para contener todo-->
+    <div id="contenedor">
+        <h1>Contador de personas </h1>
+        <h2 id="count-el">0</h2>
+
+        <!--DIV para los botones-->
+        <div id="botones">
+
+            <!--Este es el boton de incremento que llama a la funcion "increment" -->
+            <button id="increment-btn" onclick="increment()">SUMAR</button>
+
+            <!--Este es el boton para restar la gente-->
+            <button id="decrement-btn" onclick="decrement()">RESTAR</button>
+
+            <!--Creamos el boton de guardar que invoca a la funcion "save"-->
+            <button id="save-btn" onclick="save()">GUARDAR</button>
+
+        </div>
+
+        <!--Crea un parrafo que me cuente las entradas anteriores de los valores que vamos metiendo-->
+        <p id="save-el">Entradas anteriores: </p>
+
+        <!--Crear un parrafo para las personas totales-->
+        <p id="total-el">Entradas totales: </p>
+
+        <!--Informacion de la tarifa-->
+        <p>Tarifa por persona: 1,5€</p>
+
+        <!--Mostrar los ingresos totales-->
+        <p id="ingresos-el">Ingresos: 0€</p>
+
+        <!--Creamos un boton de reseteo de la app-->
+        <button id="reset-btn" onclick="reset()">RESETEAR</button>
+
+    </div>
+    <footer>Trabajo Lenguaje de Marcas. Laura Serna</footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

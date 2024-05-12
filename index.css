@@ -1,0 +1,104 @@
+/*Estilado Base*/
+body {
+    background-image: url("img/station.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 10px;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+    margin: 10px 10px;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 18px;
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.571);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+/*DIV para todo. Esto lo hago para que el contenido este centrado en el medio y ademas asi le puedo poner como un fondito para que resalte*/
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.636);
+    border-radius: 10px;
+    box-shadow: 10px rgba(0, 0, 0, 0.11);
+    padding: 15px;
+    width: 50%;
+}
+
+/*DIV para los botones. Este DIV es para poner los botones de forma horizontal ya que en el DIV contenedor estamos diciendo que la direccion de los elementos 
+es por columnas, por defecto, esta en "rows" es decir filas*/
+#botones {
+    display: inline;
+    align-items: center;
+}
+
+/*Diseño Botones*/
+button {
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin: 5px 5px;
+    border-radius: 5px;
+}
+
+#increment-btn {
+    background-color: #0C848F;
+}
+
+#increment-btn:hover {
+    background-color: #0E94A0;
+}
+
+#decrement-btn {
+    background-color: #AB420A;
+}
+
+#decrement-btn:hover {
+    background-color: #CD500C;
+}
+
+#save-btn {
+    background-color: #0B6DA2;
+}
+
+#save-btn:hover {
+    background-color: #0E89CB;
+}
+
+#reset-btn {
+    background-color: #5a656e;
+}
+
+#reset-btn:hover {
+    background-color: #6c757d;
+}
